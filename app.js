@@ -7,7 +7,7 @@ const authRoutes = require("./routes/authRoutes");
 const cookieParser = require("cookie-parser");
 const { requireAuth } = require("./middleware/authMiddleware");
   
-const dbUri = process.env.MONGO_URI;
+const dbUri = "mongodb+srv://Aliasgar_12345:Aliasgar_12345@learningm.howmu.mongodb.net/?retryWrites=true&w=majority";
 
 mongoose.connect( dbUri, { useNewUrlParser: true, useUnifiedTopology: true})
   .then(() => {
