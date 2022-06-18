@@ -4,7 +4,7 @@ const authController = require("../controllers/authController");
 function requireAuth(req, res, next) {
   const token = req.cookies.jwt;
   if (token) {
-    jwt.verify(token, process.env.JWT_KEY, (err, decodedToken) => {
+    jwt.verify(token, "Aliasgar", (err, decodedToken) => {
       if (err) {
         console.log(err.message);
         res.redirect("/login");
