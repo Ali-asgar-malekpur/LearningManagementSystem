@@ -30,7 +30,7 @@ const handleErrors = (err) => {
 };
 
 const createToken = (id) => {
-  return jwt.sign({ id }, process.env.JWT_KEY);
+  return jwt.sign({ id }, "Aliasgar");
 };
 
 module.exports.signup_get = (req, res) => {
