@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap'); 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #02223C;
+  color: #011628;
+  font-weight: 500;
+  font-family: "Fira Code", sans-serif;
+  margin: 0;
+  height: 100vh;
+}
+
+nav {
+  height: 150px;
+  max-width: 950px;
+  width: 90%;
+  top: 0;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo-text {
+  font-size: 2.5rem;
+  font-family: "Satisfy", Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: #FDFFFC;
+  font-weight: bold;
+}
+
+nav .a-btn {
+  background-color: #FDFFFC;
+  color: #011628;
+  outline: 0;
+  border: 0;
+  width: 100px;
+  text-decoration: none;
+}
+
+nav .a-btn:hover{
+  background-color: #02223C;
+  color: #FDFFFC;
+  border: 3px solid #FDFFFC;
+}
+
+.container {
+  background-color:#FDFFFC;
+  min-height: calc(100% - 150px);
+  max-width: 950px;
+  width: 90%;
+  margin: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px;
+  margin-top: 80px;
+}
+
+.left.image {
+  background: url("https://images.unsplash.com/photo-1520085601670-ee14aa5fa3e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  position: absolute;
+  width: 50%;
+  left: 0;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.left.image::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.right {
+  position: absolute;
+  width: 50%;
+  right: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.input-form {
+  font-family: "Fira Code", sans-serif;
+  padding: 20px auto;
+  width: 50%;
+}
+.w90 {
+  width: 90%;
+}
+.input-form h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.container a {
+  text-decoration: none;
+  color:#02223C;
+}
+
+.container a:hover {
+  text-decoration: underline;
+  color: #011628;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  width: 90%;
+  background-color: #02223C;
+  padding: 15px;
+  font-size: 16px;
+  font-family: inherit;
+  border: 0;
+  letter-spacing: 1px;
+  color: #FDFFFC;
+  text-align: center;
+  font-weight: 500;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn:hover {
+  background-color: #FDFFFC;
+  color: #011628;
+  border: 3px solid #011628;
+}
+
+.text {
+  width: 90%;
+  text-align: center;
+  margin: 20px auto 0;
+}
+.right .text {
+  width: 90%;
+  text-align: left;
+}
+
+.form-control {
+  position: relative;
+  margin: 20px auto 40px;
+  width: 90%;
+}
+
+.form-control input {
+  background-color: transparent;
+  border: 0;
+  font-family: "Fira Code", sans-serif;
+  border-bottom: 2px #02223C solid;
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 18px;
+  color: #011628;
+}
+.form-control.btn {
+  width: 60%;
+  margin: auto;
+}
+
+.form-control .login-btn {
+  width: 100%;
+  margin: 0 auto;
+}
+.form-control input:focus,
+.form-control input:valid {
+  outline: 0;
+  border-bottom-color: #011628;
+}
+
+.form-control label {
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+
+.error
+{
+  margin-top: 2px;
+  color: red;
+}
+
+.form-control label span {
+  display: inline-block;
+  font-size: 18px;
+  min-width: 5px;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+  color:#FDFFFC;
+  transform: translateY(-30px);
+}
+
+footer {
+  text-align: center;
+  color: #FDFFFC;
+  height: 50px;
+  position: relative;
+  margin-top: 133px;
+}
+
+/************************* SIGNUP PAGE *************************/
+
+.header {
+  text-align: center;
+}
+
+.signup-form {
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.inputs {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  align-items: flex-start;
+  justify-content: center top;
+}
+
+.inputs .btn {
+  margin: auto;
+}
+
+@media (max-width: 1000px) {
+  nav {
+    width: 90%;
+  }
+  .signup-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 700px) {
+  .inputs {
+    grid-template-columns: auto;
+  }
+
+  .left {
+    display: none;
+  }
+  .right {
+    width: 100%;
+  }
+
+  .text, .right .text {
+    text-align: center;
+  }
+  .container {
+    width: 90%;
+  }
+  .form-control.btn {
+    width: 90%;
+  }
+}
